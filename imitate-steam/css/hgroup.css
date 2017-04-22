@@ -1,0 +1,54 @@
+	hgroup{
+		float: left;
+		margin-left: 8%;
+		margin-top: 20px;
+		width: 800px;
+	}
+	hgroup .title-1{
+		color: white;
+		font-family: 14px/1.5 宋体;
+		letter-spacing: 3px;
+	}
+	#box{
+		margin-top: 10px;
+		box-shadow: -2px 1px 2px #000;
+		width: 802px;
+		height: 352px;
+		position: relative;
+	}
+	#box .list-image{
+		width: 800px;
+		height: 350px;
+		border: 1px solid blue;
+		position: relative;
+		overflow: hidden;
+	}
+	#box .list-iamge li{
+		width: 800px;
+		height: 350px;
+		position: absolute;
+		opacity: 0;
+		filter: alpha(opacity=0);
+	}
+	#box .list-image li.current{
+		opacity: 1;
+		filter: alpha(opacity=100);
+	}
+	#box .list-number{
+		position: absolute;
+		left: 40%;
+		margin: 10px auto;
+		text-align: center;
+	}
+	#box .list-number li{
+		width: 16px;
+		height: 10px;
+		background: #fff;
+		float: left;
+		margin-right: 5px;
+		border-radius: 3px;
+		opacity: 0.3;
+	}
+	#box .list-number li:hover{
+		opacity: 0.7;
+	}

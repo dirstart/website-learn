@@ -1,0 +1,156 @@
+	body,ul,li,ol,dl,dt,p,h1,h2,h3,h4,h5,h6,form,img,button{
+		margin: 0;
+		padding: 0;
+		border: 0;
+		list-style: none;
+		/*全局控制*/
+	}
+	header{
+		width: 100%;
+		height: 104px;
+		background: rgb(23,26,33);
+	}
+	header a:link{
+		text-decoration: none;
+	}
+	header .top{
+		position: absolute;
+		margin-top: 10px;
+		width:240px;
+		right: 200px;
+		text-align: center;
+		height: 23px;
+	}
+	header .top section{
+		float: left;
+		margin-right: 10px;
+	}
+
+	header .top button{
+		line-height:22px;
+		background: #5e750b;
+	}
+	header .top .top-btn span,
+	header .top .top-login a,
+	header .top .top-lang a,
+	header .top .top-lang span{
+		font: 13px/1.5 微软雅黑;
+		color: #B8B6B4;
+	}
+	header .top .top-x span{
+		color: #fff;
+	}
+	header .top a:hover,header .top span:hover{
+		color: #fff;
+	}
+
+	header .top .top-lang{
+		height: 10px;
+		position: relative;
+	}
+	header .top .top-lang .dropdown{
+		position: absolute;
+		padding: 0;
+		opacity: 0.3;
+		height:0;
+		overflow: hidden;
+		transition: all 1s ease;
+	}
+	header .top .top-lang:hover .dropdown{
+		height: 100px;
+		opacity: 1;
+	}
+	header .top .top-lang .dropdown a{
+		width: 60px;
+		height: 30px;
+		display: block;
+		border: 1px solid #14344b;
+		background: black;
+		color: white;
+		line-height: 30px;
+	}
+	header .top .top-lang .dropdown a:hover{
+		background: #454545;
+	}
+	.caret {
+		  display: inline-block;
+		  width: 0;
+		  height: 0;
+		  margin-left: 2px;
+		  vertical-align: middle;
+		  border-top: 4px solid;
+		  border-right: 4px solid transparent;
+		  border-left: 4px solid transparent;
+	}
+	header .topx{
+		position: absolute;
+		right: 800px;
+		margin-top: 45px;
+		width: 240px;
+		height: 20px;
+		text-align: center;
+	}
+	header .top-logo{
+		position:absolute;
+		margin-top: 15px;
+		right: 930px;
+		width: 200px;
+		height: 30px;
+	}
+	header img{
+		width: 80px;
+		height: 80px;
+	}
+	header .topx .topx-nav>li{
+		float: left;
+	}
+	header .topx .topx-nav>li>a{
+		width: 50px;
+		line-height: 1.5;
+		display: block;
+		text-align: center;
+		color: #B8B6Be;
+		font: 14px/1.5 arial;
+	}
+	header .topx .topx-nav>li>a:hover{
+		color: white;
+	}
+	.topx .drop-down{
+		height: 20px;
+/*		overflow: hidden;*/
+		position: relative;
+	}
+	.topx .drop-down-content{
+		position: absolute;
+		left: 5px;
+		width: 80px;
+		padding: 0;
+		display: none;
+		opacity: 0;
+		transition: all 0.5s ease;
+		background: rgb(23,26,33);
+		border: 1px solid #000;
+		z-index: 20;
+	}
+	.topx .drop-down-content li{
+		margin-top: 7px;
+		margin-bottom: 7px;
+	}
+	.topx .drop-down-content li:hover{
+		background: #2424f9;
+	}
+	.topx  .drop-down-content a{
+		width: 80px;
+		height: 50px;
+		font: 13px/1.5 微软雅黑;
+		color: #B8B6Be;
+	}
+	.topx  .drop-down-content a:hover{
+		color: #fff;
+	}
+
+
+	.topx .drop-down:hover .drop-down-content{
+		opacity: 1;
+		display: block;
+	}

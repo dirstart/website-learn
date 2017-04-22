@@ -1,0 +1,29 @@
+	body{
+		background: #14344b;
+	}
+	aside{
+		float: left;
+		margin-top: 20px;
+		margin-left: 60px;
+		font:13px/1.5 arial;
+		width: 150px;
+/*		border: 1px solid #bfbfbf;*/
+	}
+	aside a:link{
+		text-decoration: none;
+	}
+	aside ul{
+		margin-bottom: 8px;
+	}
+	aside li{
+		margin-top: 3px;
+	}
+	aside li span{
+		color: #66c0f4;
+	}
+	aside li a{
+		color: #66c0f4;
+	}
+	aside>ul>li>label{
+		color:#c6d4cf;
+	}

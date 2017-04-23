@@ -75,25 +75,59 @@
 		color: white;
 		margin-right: 20px;
 	}
-	header .top-nav .top-nav-ul li a:link{
+	header .top-nav .top-nav-ul>li>a:link{
 		color: white;
 	}
-	header .top-nav .top-nav-ul li a:hover{
+	header .top-nav .top-nav-ul>li>a:hover{
 		padding-bottom: 7px;
 		border-bottom: 1px solid #fff;
+	}
+
+	header .top-nav .dropdown{
+		position: relative;
+		cursor: pointer;
+		z-index: 888;
+	}
+	header .top-nav .dropdown-content{
+		position: absolute;
+		width: 70px;
+		left: -10px;
+		padding: 0;
+		height: 0;
+		opacity: 0.3;
+		overflow: hidden;
+		transition: all 1s ease;
+	}
+	header .top-nav .dropdown-content a{
+		display: block;
+		width: 60px;
+		height: 20px;
+		color: 333333;
+		padding-top: 2px;
+		border: 1px solid #fff;
+		background: transparent;
 	}
 	header .top-nav span img{
 		width: 30px;
 		height: 30px;
 	}
+	header .top-nav .dropdown:hover .dropdown-content{
+		opacity: 1;
+		height: 300px;
+	}
+	header .top-nav .dropdown-content li:hover a{
+		color: #000;
+	}
 	header .top-btn{
 		position: fixed;
-		width: 120px;
-		height: 30px;
+		width: 100%;
+		height: 35px;
 		right: 3%;
-		z-index: 999;
+		z-index: 222;
 	}
 	header .top-btn .register{
+		position: absolute;
+		right: 4%;
 		background: #b54737;
 		color: white;
 		width: 50px;
@@ -108,6 +142,8 @@
 		border: 1px solid #f0f0f0;
 	}
 	header .top-btn .login{
+		position: absolute;
+		right: 1%;
 		width: 50px;
 		height: 33px;
 		color: white;
@@ -300,9 +336,17 @@
 				<li><a href="#">最新</a></li>
 				<li><a href="#">美思</a></li>
 				<li><a href="#">教育</a></li>
-				<li class="nav-image"><span><img src="image/省略号.png"></span></li>
+				<li class="dropdown"><span><img src="image/省略号.png"></span>
+					<ul class="dropdown-content">
+						<li><a href="#">风景</a></li>
+						<li><a href="#">肖像</a></li>
+						<li><a href="#">水果</a></li>
+						<li><a href="#">静物</a></li>
+						<li><a href="#">素描</a></li>
+					</ul>
+				</li>
 			</ul></section>
-			<section class="top-btn"><button class="register">注册</button><button class="login">登录</button></section>
+			<section class="top-btn" id="top-btn"><button class="register">注册</button><button class="login">登录</button></section>
 		  </div>
 
 			<section class="big-title"><h3>花瓣，陪你做生活的设计师</h3></section>
@@ -371,4 +415,28 @@
 		
 	</footer>
 </body>
+<script type="text/javascript">
+	// function getScrollTop(){
+	// 	var scrollTop=0;
+	// 	if(document.documentElement&&document.documentElement.scrollTop){
+	// 		scrollTop=document.documentElementTop;
+	// 	}else if(document.body){
+	// 		scrollTop=document.body.scrollTop;
+	// 	}
+	// 	return scrollTop;
+	// }
+	// var b=getScrollTop;
+	// var x=setInterval(function(){alert(b())},1000)
+	var oBtn=document.getElementById("top-btn");
+	window.onscroll=function(){
+		var t=document.documentElement.scrollTop || document.body.scrollTop;
+		if(t>=400){
+			oBtn.style.background="#bfbfbf";
+			oBtn.style.opacity="0.3";
+		}else{
+			oBtn.style.background="transparent";
+			oBtn.style.opacity="1";
+		}
+	}
+</script>
 </html>

@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	body,ul,li,ol,dl,dt,p,h1,h2,h3,h4,h5,h6,form,img,button{
+		margin: 0;
+		padding: 0;
+		border: 0;
+		list-style: none;
+		/*全局控制*/
+	}
+	.header-bg{
+		width: 100%;
+		height: 418px;
+		background: url(image/020.jpg) no-repeat;
+		background-position: 50% center;
+		position: relative;
+	}
+	.hgroup-bg{
+		width: 100%;
+		height: 900px;
+	/*	background: linear-gradient(#FF8C69,#C1FFC1);*/
+		/*#6CA6CD*/
+	}
+	header{
+		width: 100%;
+		height: 418px;
+		margin-top: 10px;
+		position: absolute;
+	}
+	header a:link{
+		text-decoration: none;
+	}
+	header section{
+		vertical-align: middle;
+	}
+	header .top-icon{
+		width: 100px;
+		height: 40px;
+		margin-left: 1%;
+		text-align:center;
+		float: left;
+	}
+	header .top-icon span img{
+		width: 35px;
+		height: 35px;
+		vertical-align: middle;
+/*		background: #f60;*/
+
+	}
+	header .top-icon .top-font{
+		font: 25px/35px 微软雅黑;
+		color: #fff;
+		text-align: center;
+		padding-bottom: 10px;
+	}
+	header .top-nav{
+		color: white;
+		width: 400px;
+		height: 40px;
+	/*	background: #34f333;*/
+		padding-top: 10px;
+		float: left;
+		margin-left: 20px;
+	}
+	header .top-nav .top-nav-ul{
+		float: left;
+		text-align: center;
+		vertical-align: bottom;
+	}
+	header .top-nav .top-nav-ul li{
+		float: left;
+		color: white;
+		margin-right: 20px;
+	}
+	header .top-nav .top-nav-ul li a:link{
+		color: white;
+	}
+	header .top-nav .top-nav-ul li a:hover{
+		padding-bottom: 7px;
+		border-bottom: 1px solid #fff;
+	}
+	header .top-nav span img{
+		width: 30px;
+		height: 30px;
+	}
+	header .top-btn{
+		position: fixed;
+		width: 120px;
+		height: 30px;
+		right: 3%;
+		z-index: 999;
+	}
+	header .top-btn .register{
+		background: #b54737;
+		color: white;
+		width: 50px;
+		height: 33px;
+		margin-right: 10px;
+		border: 1px solid #aa3c31;
+		border-radius: 2px;
+	}
+	header .top-btn .register:hover{
+		background: #dabdfe;
+		color: black;
+		border: 1px solid #f0f0f0;
+	}
+	header .top-btn .login{
+		width: 50px;
+		height: 33px;
+		color: white;
+		background: transparent;
+		border: 1px solid #fff;
+		border-radius: 2px;
+	}
+	header .top-btn .login:hover{
+		color: black;
+		background: #fff;
+	}
+	header .big-title{
+		width: 100%;
+		height: 40px;
+		margin-top: 100px;
+		text-align: center;
+		position: relative;
+	}
+	header h3{
+		font: 40px/20px arial;
+		color: #fff;
+	}
+	header .nav-search{
+		text-align:center;
+		position: relative;
+		width: 600px;
+		height: 32px;
+		margin-top: 30px;
+		margin-left: 32%;
+	}
+	header .nav-search input{
+		width: 600px;
+		height: 30px;
+		border: 1px solid #f1ebdc;
+		background: transparent;
+		margin-top: 30px;
+		position: relative;
+		letter-spacing: 1px;
+		font-size: 13px;
+	}
+	header .nav-search:hover input{
+		border: 1px solid #fff;
+		background: #fff;
+		opacity: 0.3;
+	}
+	header .nav-search img{
+		position: absolute;
+		width: 30px;
+		height: 30px;
+		top: 32px;
+		right: 0;
+		cursor: pointer;
+	}
+	header .nav-hot{
+		position: relative;
+		margin-top: 40px;
+		width: 450px;
+		height: 30px;
+		float: left;
+		margin-left: 35%;
+		font-size: 16px;
+	}
+	header .nav-hot a:link{
+		color: #fff;
+	}
+	header .nav-hot a:hover{
+		text-decoration: underline;
+	}
+	header .nav-hot label{
+		float: left;
+		color: #dddddd;
+		padding-right: 5px;
+	}
+	header .nav-hot li{
+		float: left;
+		padding-left: 10px;
+	}
+	hgroup{
+		position: relative;
+		width: 94%;
+		margin-left: 3%;
+		height: 900px;
+		margin-top: 10px auto;
+
+	}
+	hgroup .concern span{
+		padding-top: 10px;
+		text-align:center;
+		color: #999999;
+		display:block;
+	}
+	hgroup .diamond{
+		width:100%;
+		height: 72px;
+		margin-top: 20px;
+		position: relative;
+	}
+	hgroup .diamond .ul-image{
+		width: 100%;
+		height: 70px;
+/*		background: #f0f0f0;*/
+		text-align: center;
+		position: relative;
+	}
+	hgroup .diamond .ul-image li{
+		float: left;
+		width: 200px;
+		height: 70px;
+		background: #bfbfbf;
+		margin-right: 10px;
+		border-radius: 5px;
+	}
+	hgroup .diamond .ul-number{
+		width: 100%;
+		height: 70px;
+		text-align:center;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	hgroup .diamond .ul-number li{
+		float: left;
+		width: 200px;
+		height: 70px;
+		margin-right:10px;
+	}
+	hgroup .diamond .ul-number li a:link{
+		font: 22px/20px 微软雅黑;
+		color: #fff;
+		text-decoration: none;
+		line-height: 70px;
+	}
+	hgroup .image-bed{
+		margin-top: 18px;
+		width: 100%;
+		height: 600px;
+		margin-left: 1%;
+		overflow:hidden;
+	}
+	hgroup .image-bed .main-image li{
+		width: 18%;
+		height: 280px;
+		margin-right: 1%;
+		margin-bottom: 1%;
+		float: left;
+		background: #f0f0f0;
+		border-radius: 5px;
+		border: 1px solid #bfbfbf;
+	}
+	hgroup .load-btn{
+		margin-top: 18px;
+		height: 40px;
+		text-align:center;
+	}
+	hgroup .load-btn button{
+		width: 300px;
+		font: 14px/40px arial;
+		color: #234243;
+		opacity: 0.5;
+	}
+	hgroup .load-btn button:hover{
+		opacity: 0.8;
+	}
+	hgroup .close-bottom{
+		margin-top: 18px;
+		height: 30px;
+	}
+	hgroup .close-bottom span{
+		float: left;
+		color: #bbf322;
+	}
+	body a:link,a:visited{
+		color: #fff;
+	}
+	hgroup .close-bottom a{
+		color: purple;
+		float: right;
+		text-decoration: none;
+	}
+	</style>
+</head>
+<body>
+	<div class="header-bg">
+		<header>
+		  <div class="help">
+			<section class="top-icon"><span class="topic-icon"><img src="image/huaban.png"></span><span class="top-font"><a>花瓣</a></span></section>
+			<section class="top-nav">
+			<ul class="top-nav-ul">
+				<li><a href="#">发现</a></li>
+				<li><a href="#">最新</a></li>
+				<li><a href="#">美思</a></li>
+				<li><a href="#">教育</a></li>
+				<li class="nav-image"><span><img src="image/省略号.png"></span></li>
+			</ul></section>
+			<section class="top-btn"><button class="register">注册</button><button class="login">登录</button></section>
+		  </div>
+
+			<section class="big-title"><h3>花瓣，陪你做生活的设计师</h3></section>
+			<section class="nav-search"><input type="text" placeholder="  搜索你喜欢的" /><img src="image/search.png"></section>
+			<section class="nav-hot">
+				<label>热门搜索:</label>
+				<ul>
+					<li><a href="#">餐桌布置</a></li><label>,</label>
+					<li><a href="#">手绘英文涂鸦</a></li><label>,</label>
+					<li><a href="#"> 春天</a></li><label>,</label>
+					<li><a href="#">北欧家园</a></li>
+				</ul>
+			</section>
+		</header>
+	</div>
+
+	<div class="hgroup-bg">
+	<hgroup>
+		<aside class="concern"><span>大家正在关注</span></aside>	
+		<aside class="diamond">
+			<ul class="ul-image">
+				<li><a href="#"></a></li>
+				<li><a href="#"></a></li>
+				<li><a href="#"></a></li>
+				<li><a href="#"></a></li>
+				<li><a href="#"></a></li>
+				<li><a href="#"></a></li>
+				<li><a href="#"></a></li>
+			</ul>
+			<ul class="ul-number">
+				<li><a href="#">二十四节气插画</a></li>
+				<li><a href="#">三明治</a></li>
+				<li><a href="#">彩虹</a></li>
+				<li><a href="#">健身</a></li>
+				<li><a href="#">晚安图</a></li>
+				<li><a href="#">古装美女</a></li>
+				<li><a href="#">照片墙</a></li>
+			</ul>
+		</aside>
+		<aside class="concern">
+			<span>为您推荐</span>
+		</aside>
+		<section class="image-bed">
+			<ul class="main-image">
+				<li><a href="#">图1</a></li>
+				<li><a href="#">图2</a></li>
+				<li><a href="#">图3</a></li>
+				<li><a href="#">图4</a></li>
+				<li><a href="#">图5</a></li>
+				<li><a href="#">图6</a></li>
+				<li><a href="#">图7</a></li>
+			</ul>
+		</section>
+		<hr/>
+		<section class="load-btn"><button>加载更多</button></section>
+		<hr />
+		<section class="close-bottom"><span>以分类浏览花瓣</span><a href="#">所有采集 &gt;&gt;</a></section>
+		<section class="fenlei">
+			
+		</section>
+	</hgroup>
+	</div>
+
+
+	<footer>
+		
+	</footer>
+</body>
+</html>

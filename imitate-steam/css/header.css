@@ -47,6 +47,7 @@
 	header .top .top-lang{
 		height: 10px;
 		position: relative;
+		z-index: 999;
 	}
 	header .top .top-lang .dropdown{
 		position: absolute;
@@ -57,7 +58,7 @@
 		transition: all 1s ease;
 	}
 	header .top .top-lang:hover .dropdown{
-		height: 100px;
+		height: 500px;
 		opacity: 1;
 	}
 	header .top .top-lang .dropdown a{

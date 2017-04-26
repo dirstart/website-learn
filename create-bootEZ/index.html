@@ -10,6 +10,7 @@
 	<style type="text/css">
 		body{
 			padding-top: 50px;
+			padding-bottom: 50px;
 		}
 		.carousel{
 			background-color: #000;
@@ -63,12 +64,12 @@
 					<li><a href="#">简述</a></li>
 					<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">特点<span class="caret"></span></a>
 						<ul class="dropdown-menu" role="menu">
-							<li><a href="#">二次元</a></li>
+							<li><a href="#tab-chrome">二次元</a></li>
 							<li><a href="#">竞技性</a></li>
 							<li><a href="#">画风</a>
 						</ul>
 					</li>
-					<li><a href="#">关于</a></li>
+					<li><a href="#" data-toggle="modal" data-target="#about">关于</a></li>
 				</ul>
 			</div>
 		</div>
@@ -156,7 +157,7 @@
 		<hr class="divider">
 
 
-		<ul class="nav nav-tabs" role="tablist">
+		<ul class="nav nav-tabs" role="tablist" id="tab-list">
 			<li class="active"><a href="#home" role="tab" data-toggle="tab">Home</a></li>
 			<li><a href="#profile"  role="tab" data-toggle="tab">Profile</a></li>
 			<li><a href="#message" role="tab" data-toggle="tab">Messages</a></li>
@@ -197,8 +198,31 @@
 			  </div>
 			</div>
 		</div>
-	</div>
 
+		<hr class="divider">
+
+		<footer>
+			<p class="pull-right"><a href="#top">回到顶部</a></p>
+			<p>版权符号</p>
+		</footer>
+	</div>
+<div class="modal fade" id="about">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+			<!-- 弹出框的头部 -->
+				<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span>
+				<span class="sr-only">Close</span></button>
+			</div>
+			<div class="modal-body">
+				<p>我就是弹出框的内容</p>
+			</div>
+			<div class="modal-footer">
+				<button class="btn btn-default" data-dismiss="modal">了解了</button>
+			</div>
+		</div>
+	</div>
+</div>
 </body>
 <script type="text/javascript">
 	$(function(){

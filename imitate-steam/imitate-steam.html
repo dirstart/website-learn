@@ -9,11 +9,25 @@
 	<link rel="stylesheet" type="text/css" href="css/hgroup.css">
 	<style>
 	footer{
+		padding-top: 20px;
 		float: left;
 		width: 100%;
 		height: 137px;
 		background: #101822;
+		text-align: center;
+		font:12px/20px 微软雅黑;
 	}
+	footer a:link{
+		text-decoration: none;
+	}
+	footer a:visited{
+		color: #333333;
+	}
+	footer a:hover{
+		color: white;
+		text-decoration: underline;
+	}
+
 	</style>
 </head>
 <body>
@@ -107,6 +121,16 @@
 			<li><a href="#">推荐</a></li>
 			<li><a href="#">新品</a></li>
 		</ul>
+		<ul class="explore">
+			<li><label>探索队列</label></li>
+			<li><a href="#">推荐</a></li>
+			<li><a href="#">新品</a></li>
+		</ul>
+		<ul class="explore">
+			<li><label>探索队列</label></li>
+			<li><a href="#">推荐</a></li>
+			<li><a href="#">新品</a></li>
+		</ul>
 	</aside>
 	<nav>
 		<ul>
@@ -143,14 +167,21 @@
 		<span class="title-1">精选和推荐</span>
 		<div id="box">
 			<ul class="list-image">
-				<li><img src="image/052.jpg" width="800px" height="350px"></li>
+				<li class="current"><img src="image/b2.jpg" width="800px" height="350px"></li>
 				<li><img src="image/041.jpg" width="800px" height="350px"></li>
-				<li><img src="image/042.jpg" width="800px" height="350px"></li>
-				<li><img src="image/043.jpg" width="800px" height="350px"></li>
-				<li><img src="image/037.jpg" width="800px" height="350px"></li>
+				<li><img src="image/b1.jpg" width="800px" height="350px"></li>
+				<li><img src="image/b2.jpg" width="800px" height="350px"></li>
+				<li><img src="image/b3.jpg" width="800px" height="350px"></li>
+				<li><img src="image/041.jpg" width="800px" height="350px"></li>
+				<li><img src="image/041.jpg" width="800px" height="350px"></li>
+				<li><img src="image/041.jpg" width="800px" height="350px"></li>
+				<li><img src="image/041.jpg" width="800px" height="350px"></li>
+				<li><img src="image/041.jpg" width="800px" height="350px"></li>
+				<li><img src="image/041.jpg" width="800px" height="350px"></li>
+				<li><img src="image/041.jpg" width="800px" height="350px"></li>
 			</ul>
 			<ul class="list-number">
-				<li></li>
+				<li class="current"></li>
 				<li></li>
 				<li></li>
 				<li></li>
@@ -164,16 +195,47 @@
 				<li></li>
 			</ul>
 		</div>
+
+		<div id="box2">
+		<span class="title-2">特别优惠</span>
+			<ul class="list-image2">
+				<li><img src="image/b3.jpg" width="800px" height="350px"></li>
+				<li><img src="image/b1.jpg" width="800px" height="350px"></li>
+			</ul>
+			<ul class="list-number2">
+				<li class="current"></li>
+				<li></li>
+			</ul>
+		</div>
 	</hgroup>
 
 	<footer>
-		
+		 <div class="logo">
+           <a href="http://www.sgamer.com"></a>
+       </div>
+       <div class="info cf">
+       <p>
+            Copyright &copy; 保留所有权利。所有权利均为在美国的xx所有。
+       </p>
+       <p>
+           <a href="#" rel="nofollow" target="_blank"> About Us </a> | 
+           <a href="#" rel="nofollow" target="_blank"> 关于我们 </a> | 
+           <a href="#" rel="nofollow" target="_blank"> 广告服务 </a> | 
+           <a href="#" rel="nofollow" target="_blank"> 联系我们 </a> | 
+           <a href="#" rel="nofollow" target="_blank"> 招聘信息 </a> | 
+           <a href="#" rel="nofollow" target="_blank"> 友情连接 </a>
+       </p>
+       <p>
+           <a href="#" rel="nofollow" target="_blank"> xxxxx </a>
+           <a href="#" rel="nofollow" target="_blank"> 企业营业执照xxxx </a>
+       </p>
+       </div>
+
 	</footer>
 
 
 
 </div>
-
-<script src="1.js"></script>
 </body>
+<script src="script/lunbo.js"></script>
 </html>

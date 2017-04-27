@@ -48,7 +48,7 @@
 	<nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
 		<div class="container">
 			<div class="navbar-header">
-				<button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#demo-drop">
 					<span class="sr-only">Toggle navigation</span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
@@ -58,15 +58,15 @@
 				<a href="#" class="navbar-brand">流行的游戏</a>
 			</div>
 
-		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">		
+		    <div class="collapse navbar-collapse" id="demo-drop">		
 				<ul class="nav navbar-nav">
 					<li class="active"><a href="#">综述</a></li>
 					<li><a href="#">简述</a></li>
 					<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">特点<span class="caret"></span></a>
 						<ul class="dropdown-menu" role="menu">
 							<li><a href="#tab-chrome">二次元</a></li>
-							<li><a href="#">竞技性</a></li>
-							<li><a href="#">画风</a>
+							<li><a href="#tab-firefox">竞技性</a></li>
+							<li><a href="#tab-safari">画风</a>
 						</ul>
 					</li>
 					<li><a href="#" data-toggle="modal" data-target="#about">关于</a></li>
@@ -158,9 +158,9 @@
 
 
 		<ul class="nav nav-tabs" role="tablist" id="tab-list">
-			<li class="active"><a href="#home" role="tab" data-toggle="tab">Home</a></li>
-			<li><a href="#profile"  role="tab" data-toggle="tab">Profile</a></li>
-			<li><a href="#message" role="tab" data-toggle="tab">Messages</a></li>
+			<li class="active"><a href="#tab-chrome" role="tab" data-toggle="tab">Home</a></li>
+			<li><a href="#tab-firefox"  role="tab" data-toggle="tab">Profile</a></li>
+			<li><a href="#tab-safari"  role="tab" data-toggle="tab">Messages</a></li>
 			<li><a href="#setting" role="tab" data-toggle="tab">Setting</a></li>
 		</ul>
 
@@ -230,6 +230,13 @@
 			interval:5000
 		});
 	})
+
+	$(document).ready(function(){
+		$("#demo-drop .dropdown-menu a").click(function(){
+			var href=$(this).attr("href");
+			$("#tab-list a[href='"+href+"']").tab("show");
+		})
+	});
 	
 </script>
 </html>

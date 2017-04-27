@@ -2,8 +2,6 @@ var oBox=document.getElementById("box");
 	var oUl=oBox.getElementsByTagName("ul");
 	var oImage=oUl[0].getElementsByTagName("li");
 	var oNumber=oUl[1].getElementsByTagName("li");
-
-
 	var index=0;
 	var timer=null; //用于实现淡入淡出
 	var play_timer=null;//用于实现自动的计时器
@@ -62,3 +60,4 @@ var oBox=document.getElementById("box");
 		Auto();
 	}
 	Auto();
+

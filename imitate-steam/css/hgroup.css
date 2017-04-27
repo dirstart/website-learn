@@ -4,17 +4,37 @@
 		margin-top: 20px;
 		width: 800px;
 	}
-	hgroup .title-1{
+	hgroup .title-1,.title-2{
 		color: white;
 		font-family: 14px/1.5 宋体;
 		letter-spacing: 3px;
 	}
 	#box{
 		margin-top: 10px;
+		margin-bottom: 30px;
 		box-shadow: -2px 1px 2px #000;
 		width: 802px;
 		height: 352px;
 		position: relative;
+	}
+	#box2 span{
+		margin-top: 20px;
+	}
+	#box2{
+		margin-top: 10px;
+		margin-bottom: 100px;
+		width: 802px;
+		height: 353px;
+		position: relative;
+	}
+	#box2 .list-image2{
+		margin-top: 10px;
+		width: 800px;
+		height: 350px;
+		border: 1px solid blue;
+		position: relative;
+		overflow: hidden;
+		box-shadow: 2px 2px 2px #000;
 	}
 	#box .list-image{
 		width: 800px;
@@ -23,7 +43,31 @@
 		position: relative;
 		overflow: hidden;
 	}
-	#box .list-iamge li{
+	#box2 .list-number2 li{
+		width: 30px;
+		height: 20px;
+		background: #ccc;
+		border-radius: 8px;
+		cursor: pointer;
+		float: left;
+		margin-right: 40px;
+		opacity: 0.5;
+	}
+	#box2 .list-number2 li.current{
+		width: 60px;
+		border-radius: 20px;
+		background: #03bde5;
+	}
+	#box2 .list-number2{
+		text-align: center;
+		width: 800px;
+		height: 20px;
+		position: absolute;
+		top: 320px;
+		left: 350px;
+		margin-bottom: 20px;
+	}
+	#box .list-image li{
 		width: 800px;
 		height: 350px;
 		position: absolute;
@@ -49,6 +93,7 @@
 		border-radius: 3px;
 		opacity: 0.3;
 	}
-	#box .list-number li:hover{
+	#box .list-number li:hover,
+	#box .list-number li.current{
 		opacity: 0.7;
 	}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<script>
+	var a=[
+	{
+		project:[{text:"1"},
+		{xx:"2"}]
+	},
+	{
+		project:1
+	}
+	]
+
+	while(a[0]){
+		var project=a[0].project;
+		for(var i=0;i<project.length;i++){
+			alert("1");
+		}
+		a.shift();
+		//出错的原因其实是第二个中没有project
+	}
+</script>
+</body>
+</html>

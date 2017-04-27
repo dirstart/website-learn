@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	body,div{margin: 0;padding: 0;}
+	div{
+		border: 1px solid #000;
+	}
+	#wrap{
+		width: 350px;
+		background: #ccc;
+		border: 12px solid #eee;
+	}
+	#wrap dl{
+		background: #f60;
+	}
+	
+	</style>
+</head>
+<body>
+
+<script>	
+	window.onload=function(){
+
+
+	function CreateList(){
+		this.oWrap=document.createElement("div");
+		this.init.apply(this, arguments);
+		//自己调用自己的数组对象，也就是说我们构造函数的格式为  CreateList(arguments)
+	}
+	CreateList.prototype={
+		//aData即是我们传入的东西
+		init:function(aData){
+			var oDl,oElem,project,i;
+			while(aData[0]){
+				oDl=document.createElement("dl");
+				project=aData[0].project;
+				for(i=0;i<project.length;i++){
+					if(project[i].href){
+						oElem=document.createElement("dd");
+						oElem.innerHTML=i+".<a href=\""+project[i].href+"\" >"+project[i].text+"</a>";
+						// oElem.innerHTML=i+"."+"<a href="+project[i].href+">"+1+"</a>";
+					}else{
+						oElem=document.createElement("dt");
+						oElem.innerHTML=project[i].text+"("+(project.length-1)+")";
+					}
+					oDl.appendChild(oElem);
+				}
+				this.oWrap.appendChild(oDl);
+				aData.shift();
+			}
+			this.oWrap.id="wrap";
+			document.body.appendChild(this.oWrap);
+		}
+	}
+
+
+
+	new CreateList([
+			{
+				project:[{
+					text:"第一课"
+				},
+				{
+					text:"控制div属性",
+					href:"JS/test.html"
+				}]
+			},
+			{
+				project:[{
+					text:"第二课"
+				},
+				{
+					text:"访问量就",
+					href:"lesson1/01.html"
+				}]
+			}
+	]);
+		//外围[]是一个数组，内部包含着{}是第一个对象，对象里面的project属性是一个数组
+
+
+
+
+	// !(function(){
+	// 	var oDiv=document.createElement("div");
+	// 	oDiv.style.width="384px";
+	// 	oDiv.style.textAlign="right";
+	// 	oDiv.style.height="100px";
+	// 	document.body.appendChild(oDiv);
+	// 	 oDiv.innerHTML = "<iframe width=\"117\" height=\"24\" frameborder=\"0\" allowtransparency=\"true\" marginwidth=\"0\" marginheight=\"0\" scrolling=\"no\" border=\"0\" src=\"http://widget.weibo.com/relationship/followbutton.php?language=zh_cn&width=136&height=24&uid=1844880617&style=2&btn=red&dpc=1\"></iframe>";
+	// })();
+	//learning,原来还可以这样导入微博！！！！！！		
+
+}
+</script>
+</body>
+</html>

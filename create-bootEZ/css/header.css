@@ -1,0 +1,14 @@
+.navbar-default{
+	background-image:url(image2/a1.jpg) !important;
+	vertical-align: center;
+	opacity: 1;
+}
+.navbar-default .current{
+	opacity: 0.5;
+}
+.navbar .navbar-default .navbar-fixed-top .navbar-inverse{
+	background-image:url(image2/a1.jpg) !important;
+}
+.carousel-inner{
+	vertical-align: center;
+}

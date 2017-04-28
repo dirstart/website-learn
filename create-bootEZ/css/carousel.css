@@ -1,0 +1,45 @@
+.carousel{
+	background-color: #000;
+	height: 400px;
+	margin-bottom: 60px;
+}
+.carousel .item{
+	width: 100%;
+	height: 400px;
+	overflow: hidden;
+	font-color: #B8B6B4;
+}
+.carousel .item p,h1{
+	color:#f7f7f7;
+}
+.carousel .item img{
+	opacity: 1;
+}
+.carousel .item:hover img{
+	opacity: 0.3;
+}
+.carousel .item:hover p,.carousel .item:hover h1{
+	color: #bfbfbf;
+	text-shadow: 2px 1px 1px purple;
+	transition: all 2s ease;
+}
+.carousel-caption{
+	position: absolute;
+	top: 30px;
+}
+.carousel-caption:hover{
+	top: 10px;
+	transition: all 1s ease;
+}
+.carousel-caption p{
+	margin-bottom: 20px;
+	font-size: 20px;
+	line-height: 1.8;
+}
+.carousel-caption .inst{
+	opacity: 0;
+}
+.carousel .item:hover  .inst{
+	opacity: 1;
+	transition: all 1s ease;
+}

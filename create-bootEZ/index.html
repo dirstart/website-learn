@@ -2,39 +2,24 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>新海诚动漫介绍</title>
 	<link rel="stylesheet" type="text/css" href="rely/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="rely/bootstrap-theme.min.css">
 	<script src="rely/jquery.min.js"></script>
 	<script src="rely/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/header.css">
+	<link rel="stylesheet" type="text/css" href="css/carousel.css">
 	<style type="text/css">
 		body{
 			padding-top: 50px;
 			padding-bottom: 50px;
 		}
-		.carousel{
-			background-color: #000;
-			height: 200px;
-			margin-bottom: 60px;
-		}
-		.carousel .item{
-			width: 100%;
-			height: 200px;
-		}
-		.carousel img{
-			width: 100%;
-		}
-		.carousel .caption p{
-			margin-bottom: 20px;
-			font-size: 20px;
-			line-height: 1.8;
-		}
-		#my-container{
+		.my-container{
 			text-align: center;
 		}
-		#my-container img{
-			width: 200px;
-			height: 200px;
+		.my-container img{
+			width: 100px;
+			height: 100px;
 		}
 		hr.divider{
 			margin: 40px 0;
@@ -45,8 +30,8 @@
 	</style>
 </head>
 <body>
-	<nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
-		<div class="container">
+	<nav class="navbar navbar-default navbar-fixed-top navbar-inverse"  role="navigation">
+		<div class="container" id="test_nav" >
 			<div class="navbar-header">
 				<button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#demo-drop">
 					<span class="sr-only">Toggle navigation</span>
@@ -55,18 +40,20 @@
 					<span class="icon-bar"></span>
 				</button>
 				<!-- button中的代码为响应式代码 -->
-				<a href="#" class="navbar-brand">流行的游戏</a>
+				<a href="#" class="navbar-brand">新海诚</a>
 			</div>
 
 		    <div class="collapse navbar-collapse" id="demo-drop">		
 				<ul class="nav navbar-nav">
-					<li class="active"><a href="#">综述</a></li>
+					<li class="active"><a href="#">风格</a></li>
 					<li><a href="#">简述</a></li>
-					<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">特点<span class="caret"></span></a>
+					<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">动漫<span class="caret"></span></a>
 						<ul class="dropdown-menu" role="menu">
-							<li><a href="#tab-chrome">二次元</a></li>
-							<li><a href="#tab-firefox">竞技性</a></li>
-							<li><a href="#tab-safari">画风</a>
+							<li><a href="#tab-miao">秒速五厘米</a></li>
+							<li><a href="#tab-yan">言叶之庭</a></li>
+							<li><a href="#tab-yun">云之彼端</a></li>
+							<li><a href="#tab-xing">星之声</a></li>
+							<li><a href="#tab-zhui">追逐繁星的孩子</a></li>
 						</ul>
 					</li>
 					<li><a href="#" data-toggle="modal" data-target="#about">关于</a></li>
@@ -88,39 +75,45 @@
 
 		<div class="carousel-inner" role="listbox" id="my">
 			<div class="item active">
-				<img src="image/b1.jpg" alt="">
+				<img src="image/x1.JPG" alt="">
 				<div class="carousel-caption">
-					<h1>阴阳师</h1>
-					<p><a href="#" class="btn btn-lg btn-primary" target="_blank">点我下载</a></p>
+					<h1>秒速五厘米</h1>
+					<p>我们仰望着同一片天空却看着不同的地方</p>
+					<p class="inst">《秒速5厘米》是新海诚创作的一部写实动画，于2007年3月3日在日本正式上映。
+动画以一个少年为故事轴心而展开连续3个独立故事的动画短篇，时代背景是从1990年代至现代的日本，通过少年的人生展现东京以及其他地区的变迁。[1]  第一话《樱花抄》描述贵树与明里年幼时恋爱的心情，以及他们重逢的一天，第二话《宇航员》描述以对进入高中就读的贵树怀有好感的澄田花苗的视角来展现贵树与明里分别后的生活，第三话《秒速5厘米》则刻画了贵树和明里长大后内心的种种彷徨。</p>
 				</div>
 				<!-- caption字幕说明，这个即是上方的div里面的东西，文字 -->
 			</div>
 			<div class="item">
-				<img src="image/b2.jpg"  alt="">
+				<img src="image/x2.JPG"  alt="">
 				<div class="carousel-caption">
-					<h1>阴阳师</h1>
-					<p><a href="#" class="btn btn-lg btn-primary" target="_blank">点我下载</a></p>
+					<h1>言叶之庭</h1>
+					<p>我喜欢雨，因为它带来天空的味道。</p>
+					<p class="inst">《言叶之庭》由曾执导过《星之声》、《秒速5厘米》、《追逐繁星的孩子》等动画电影的新海诚掌镜，影片于2013年5月31日在台湾、香港、日本同步上映。乐视网也取得了电影的网络同步上映版权。《言叶之庭》的故事发生在现代东京，故事讲述了以制鞋人为目标的少年秋月和神秘女子雪野的恋爱故事。故事源于万叶集开篇的“孤悲”之恋，作品中透露出鞋、万叶集、日本庭园、雨等因素。>>>></p>
 				</div>
 			</div>
 			<div class="item">
-				<img src="image/b3.jpg" alt="">
+				<img src="image/x3.JPG" alt="">
 				<div class="carousel-caption">
-					<h1>阴阳师</h1>
-					<p><a href="#" class="btn btn-lg btn-primary" target="_blank">点我下载</a></p>
+					<h1>云之彼端</h1>
+					<p>伸手可见的距离，却不能到达的那个地方。</p>
+					<p class="inst">《云之彼端，约定的地方》（云のむこう、约束の场所 -The place promised in our early days-）是日本导演新海诚于2004年制作的第一部长篇动画电影。本作品是新海诚继《她与她的猫》（彼女と彼女の猫）与《星之声》（ほしのこえ）之后的第三部作品，同时也是首部放映时间达91分的长篇动画作品。2004年11月20日于涩谷Cinemax公开首映，其他的戏院也在数日后开始放映。台湾于2006年8月6日在卫视电影台以中文配音方式放映。 >>></p>
 				</div>
 			</div>
 			<div class="item">
-				<img src="image/b4.jpg"  alt="">
+				<img src="image/x4.JPG"  alt="">
 				<div class="carousel-caption">
-					<h1>阴阳师</h1>
-					<p><a href="#" class="btn btn-lg btn-primary" target="_blank">点我下载</a></p>
+					<h1>星之声</h1>
+					<p>也许，思念可以超越时间与距离.</p>
+					<p class="inst">《星之声》是日本动画导演新海诚编导的一部动画电影，由篠原美香，武藤寿美等参与配音。新海诚同时还担任了该片的摄影、剪辑、美术设计、配音等工作。作品于2003年2月2日在日本首映，后在意大利、瑞典等地发行。该片讲述了同一所国中的三年级学生长峰美加子与寺尾升两人，在浩瀚星空与地球之间突破重重困难挚守爱情的故事。 >>></p>
 				</div>
 			</div>
 			<div class="item">
-				<img src="image/b5.jpg"  alt="">
+				<img src="image/x5.jpg"  alt="">
 				<div class="carousel-caption">
-					<h1>阴阳师</h1>
-					<p><a href="#" class="btn btn-lg btn-primary" target="_blank">点我下载</a></p>
+					<h1>追逐繁星的孩子</h1>
+					<p>我动身踏上旅程，是为了与你道别。</p>
+					<p class="inst">《追逐繁星的孩子》是继2007年的《秒速5厘米》后，新海诚执导的另一部动画作品。故事环绕著女主角明日菜的冒险展开。主人公明日菜自从父亲死后，当护士的妈妈也因为工作繁忙而很少回家，明日菜便一直过著孤独寂寞的生活。有一天，透过从她爸爸留给她的水晶收音机遗物中，突然传出了不可思议的音乐，这首不可思议的音乐同时改变了她的日常生活。明日菜决定追寻著这把来自远方的声音而展开了新的冒险之旅，只为了再与一个生活在异国的男孩再相遇而来到了地下世界雅戈泰，最后明日菜终于明白，自己之所以开始这场冒险只是因为...</p>
 				</div>
 			</div>
 		</div>
@@ -137,63 +130,76 @@
 		<!-- 对应向左向右的切换按钮 -->
 	</div>
 
-	<div class="container" id="my-container">
+	<div class="container my-container">
 		<div class="row">
 			<div class="col-md-4">
-				<img class="img-circle" src="image/a1.jpg" alt="">
-				<h2>阴阳师</h2> 
-				<p>网易爸爸的坑钱游戏</p>
-				<p><a href="#" class="btn btn-default">点我下载</a></p>
+				<img class="img-circle" src="image/b1.JPG" alt="">
+				<h2>新海诚</h2> 
+				<p>新海诚（Makoto Shinkai），原名：新津诚（Makoto Niitsu），1973年2月9日出生于日本长野县南佐久郡小海町，日本动画导演和作家，居住在东京都，日本长野县野泽北高等学校、日本中央大学文学部日本文学系毕业。</p>
+<!-- 				<p><a href="#" class="btn btn-default">点我下载</a></p> -->
 			</div>
 			<div class="col-md-4">
-				<img class="img-circle" src="image/a2.jpg" alt="">
-				<h2>xxx</h2> 
+				<img class="img-circle" src="image/b2.JPG" alt="">
+				<h2>宫崎骏</h2> 
+				<p>宫崎骏，1941年1月5日出生于东京都文京区[1]  ，日本动画师、动画制作人、漫画家、动画导演、动画编剧。毕业于日本东京学习院大学政治经济部。
+1963年进入东映动画公司，从事动画师工作。1971年加入手冢治虫成立的““虫Production动画部”。1974年加入Zuiyou映像与高田勋、小田部羊一共同创作《阿尔卑斯山的少女》[2]  。</p>
 			</div>
 			<div class="col-md-4">
-				<img class="img-circle" src="image/a3.jpg" alt="">
-				<h2>xxx</h2> 
+				<img class="img-circle" src="image/b3.JPG" alt="">
+				<h2>动画电影</h2> 
+				<p>1979年转入东京电影新社创作了自己首部电影《鲁邦三世卡里奥斯特罗之城》[3]  。1982年开始独立创作漫画，在《Animage》上连载漫画《风之谷》，该作品获得第23届日本漫画家协会赏[4]  。1984年执导《风之谷》，该片获得罗马奇幻电影节最佳动画短片奖等4项大奖[5]  。</p>
 			</div>
 		</div>
 		<hr class="divider">
 
 
 		<ul class="nav nav-tabs" role="tablist" id="tab-list">
-			<li class="active"><a href="#tab-chrome" role="tab" data-toggle="tab">Home</a></li>
-			<li><a href="#tab-firefox"  role="tab" data-toggle="tab">Profile</a></li>
-			<li><a href="#tab-safari"  role="tab" data-toggle="tab">Messages</a></li>
-			<li><a href="#setting" role="tab" data-toggle="tab">Setting</a></li>
+			<li class="active"><a href="#tab-miao" role="tab" data-toggle="tab">秒速五厘米</a></li>
+			<li><a href="#tab-yan"  role="tab" data-toggle="tab">言叶之庭</a></li>
+			<li><a href="#tab-yun"  role="tab" data-toggle="tab">云之彼端</a></li>
+			<li><a href="#tab-xing" role="tab" data-toggle="tab">星之声</a></li>
+			<li><a href="#tab-zhui" role="tab" data-toggle="tab">追逐繁星的孩子</a></li>
 		</ul>
 
 		<div class="tab-content">
-			<div class="tab-pane active" id="home">
+			<div class="tab-pane active" id="tab-miao">
 			  <div class="row feature">
 				<div class="col-sl-7">
-					<h1>jflwjflwj</h1>
-					<p>fsjflsjf</p>
+					<h1></h1>
+					<p>《秒速5厘米》是新海诚创作的一部写实动画，于2007年3月3日在日本正式上映。
+动画以一个少年为故事轴心而展开连续3个独立故事的动画短篇，时代背景是从1990年代至现代的日本，通过少年的人生展现东京以及其他地区的变迁。[1]  第一话《樱花抄》描述贵树与明里年幼时恋爱的心情，以及他们重逢的一天，第二话《宇航员》描述以对进入高中就读的贵树怀有好感的澄田花苗的视角来展现贵树与明里分别后的生活，第三话《秒速5厘米》则刻画了贵树和明里长大后内心的种种彷徨。</p>
 				</div>
 			  </div>
 			</div>
-			<div class="tab-pane" id="profile">
+			<div class="tab-pane" id="tab-yan">
 				<div class="row feature">
 				<div class="col-sl-7">
-					<h1>aaa</h1>
-					<p>fsjflsjf</p>
+					<h1></h1>
+					<p>《言叶之庭》由曾执导过《星之声》、《秒速5厘米》、《追逐繁星的孩子》等动画电影的新海诚掌镜，影片于2013年5月31日在台湾、香港、日本同步上映。乐视网也取得了电影的网络同步上映版权。《言叶之庭》的故事发生在现代东京，故事讲述了以制鞋人为目标的少年秋月和神秘女子雪野的恋爱故事。故事源于万叶集开篇的“孤悲”之恋，作品中透露出鞋、万叶集、日本庭园、雨等因素。>>>></p>
 				</div>
 			  </div>
 			</div>
-			<div class="tab-pane" id="message">
+			<div class="tab-pane" id="tab-yun">
 				<div class="row feature">
 				<div class="col-sl-7">
-					<h1>bbblwj</h1>
-					<p>fsjflsjf</p>
+					<h1></h1>
+					<p>《云之彼端，约定的地方》（云のむこう、约束の场所 -The place promised in our early days-）是日本导演新海诚于2004年制作的第一部长篇动画电影。本作品是新海诚继《她与她的猫》（彼女と彼女の猫）与《星之声》（ほしのこえ）之后的第三部作品，同时也是首部放映时间达91分的长篇动画作品。2004年11月20日于涩谷Cinemax公开首映，其他的戏院也在数日后开始放映。台湾于2006年8月6日在卫视电影台以中文配音方式放映。 >>></p>
 				</div>
 			  </div>
 			</div>
-			<div class="tab-pane" id="setting">
+			<div class="tab-pane" id="tab-xing">
 				<div class="row feature">
 				<div class="col-sl-7">
-					<h1>jcc</h1>
-					<p>fsjflsjf</p>
+					<h1></h1>
+					<p>《星之声》是日本动画导演新海诚编导的一部动画电影，由篠原美香，武藤寿美等参与配音。新海诚同时还担任了该片的摄影、剪辑、美术设计、配音等工作。作品于2003年2月2日在日本首映，后在意大利、瑞典等地发行。该片讲述了同一所国中的三年级学生长峰美加子与寺尾升两人，在浩瀚星空与地球之间突破重重困难挚守爱情的故事。 >>></p>
+				</div>
+			  </div>
+			</div>
+			<div class="tab-pane" id="tab-zhui">
+				<div class="row feature">
+				<div class="col-sl-7">
+					<h1></h1>
+					<p>《星之声》是日本动画导演新海诚编导的一部动画电影，由篠原美香，武藤寿美等参与配音。新海诚同时还担任了该片的摄影、剪辑、美术设计、配音等工作。作品于2003年2月2日在日本首映，后在意大利、瑞典等地发行。该片讲述了同一所国中的三年级学生长峰美加子与寺尾升两人，在浩瀚星空与地球之间突破重重困难挚守爱情的故事。 >>></p>
 				</div>
 			  </div>
 			</div>
@@ -203,22 +209,23 @@
 
 		<footer>
 			<p class="pull-right"><a href="#top">回到顶部</a></p>
-			<p>版权符号</p>
+			<p>©  网络1402-陈鸿鹏-45号</p>
 		</footer>
 	</div>
 <div class="modal fade" id="about">
 	<div class="modal-dialog">
 		<div class="modal-content">
 			<div class="modal-header">
+			<p>制作人：</p>
 			<!-- 弹出框的头部 -->
 				<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span>
 				<span class="sr-only">Close</span></button>
 			</div>
 			<div class="modal-body">
-				<p>我就是弹出框的内容</p>
+				<p>网络工程1402 - 45号 - 陈鸿鹏</p>
 			</div>
 			<div class="modal-footer">
-				<button class="btn btn-default" data-dismiss="modal">了解了</button>
+				<button class="btn btn-default" data-dismiss="modal">OK</button>
 			</div>
 		</div>
 	</div>
@@ -235,8 +242,11 @@
 		$("#demo-drop .dropdown-menu a").click(function(){
 			var href=$(this).attr("href");
 			$("#tab-list a[href='"+href+"']").tab("show");
-		})
+		});
 	});
+
+
+
 	
 </script>
 </html>

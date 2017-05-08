@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>智慧健康数据分析平台</title>
+	<link rel="stylesheet" type="text/css" href="lib/bootstrap.min.css">
+	<style type="text/css">
+		body,div,ul,li{margin: 0;padding: 0;}
+		body{
+			padding-top: 50px;
+			padding-bottom: 40px;
+		}
+		.title-position{
+			margin-top: 40px;
+        }
+        .tab-content .feature{
+			color: #3f333f;
+			margin: 10px;
+			background:rgba(0,3,4,0.2);
+		}
+		.sidebar{
+			position: fixed;
+			top: 51px;
+			left: 0;
+			bottom: 0;
+			display: block;
+			z-index: 1000;
+			padding: 20px;
+			overflow-x: hidden;
+            overflow-y: auto;
+            background-color: #ddd;
+            border-right: 1px solid #eee;
+		}
+		.main{
+			flex: 1;
+			display: block;
+			top: 51px;
+		}
+		.nav-sidebar {
+            margin-right: -21px;
+            margin-bottom: 20px;
+            margin-left: -20px;
+        }
+        .nav-sidebar>.active > a,
+        .nav-sidebar>.active > a:hover,
+        .nav-sidebar>.active > a:focus {
+            color: #fff;
+            background-color: #428bca;
+        }
+        .nav-sidebar>li>a{
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+        .nav-sidebar>li>ul{
+        	margin-bottom: 8px;
+        	background-color: #444444;
+        }
+        .nav-sidebar>li>ul>li{
+        	padding-top: 5px;
+        	font-size:15px;
+        }
+        .nav-sidebar>li>ul>li:hover{
+        	background-color: #888888;
+        }
+        .nav-sidebar>li>ul>li>a{
+        	display: block;
+        	width: 100%;
+        	height: 100%;
+            padding-right: 45px;
+            padding-left: 45px;
+            color: #ffffff;
+            text-decoration: none;
+        }
+        .nav-sidebar>li>ul>li.current{
+        	background-color: #333333;
+        }
+        
+        
+	</style>
+</head>
+<body>
+<!-- nav头部导航栏 -->
+	<nav class="navbar navbar-default  navbar-fixed-top navbar-inverse"  role="navigation">
+		<div class="container" id="test_nav" >
+			<div class="navbar-header">
+				<button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#client_operate">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<!-- button中的代码为响应式代码 -->
+				<a href="#" class="navbar-brand">智慧健康数据分析平台</a>
+			</div>
+
+		    <div class="collapse navbar-collapse" id="client_operate">		
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">主页</a></li>
+					<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">功能<span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+							<li class="dropdown-header">业务功能</li>
+							<li><a href="#detection">健康检测</a></li>
+							<li><a href="#user-add">用户添加</a></li>
+							<li><a href="#device-man">设备管理</a></li>
+							<li><a href="#data-collect">数据采集</a></li>
+							<li class="divider"></li>
+							<li class="dropdown-header">系统功能</li>
+							<li><a href="#">设置</a>
+						</ul>
+					</li>
+					<li><a href="#">帮助</a></li>
+					<li><a href="#" data-toggle="modal" data-target="#about">关于</a></li>
+				</ul>
+				<form class="navbar-form navbar-right" role="search">
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="用户名...">
+						<input type="text" class="form-control" placeholder="密码...">
+					</div>
+					<button type="submit" class="btn btn-default">登录</button>
+					<button type="submit" class="btn btn-primary">注册</button>
+				</form>
+			</div>
+		</div>
+	</nav>
+<!-- 自适应布局 -->
+	<div class="container-fluid">
+		<div class="row">
+			<!-- 左侧导航栏 -->
+			<div class="col-sm-3 col-md-2 sidebar">
+				<ul class="nav nav-sidebar">
+					<li class="active"><a href="#">首页</a></li>
+				</ul>
+				<ul class="nav nav-sidebar my-sidebar" id="operate-bar">
+					<li><a href="#detection" data-toggle="collapse">健康检测</a>
+						<ul id="detection" class="collapse">
+							<li class="current"><a href="#tab-line">血压折线图</a></li>
+							<li><a href="#tab-histogram">血压柱状图</a></li>
+							<li><a href="#tab-analysis">血压分析</a></li>
+							<li><a href="#tab-forecast">血压预测</a></li>
+						</ul>
+					</li>
+					<li><a href="#user-add" data-toggle="collapse">用户添加</a>
+						<ul id="user-add" class="collapse">
+							<li><a href="">balabal</a></li>
+							<li><a href="">balaba</a></li>
+						</ul>
+					</li>
+					<li><a href="#device-man" data-toggle="collapse">设备管理</a>
+						<ul id="device-man" class="collapse">
+							<li><a href="">balabal</a></li>
+							<li><a href="">balaba</a></li>
+						</ul>
+					</li>
+					<li><a href="#data-collect" data-toggle="collapse">数据采集</a>
+						<ul id="data-collect" class="collapse">
+							<li><a href="">balabal</a></li>
+							<li><a href="">balaba</a></li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="nav nav-sidebar">
+					<li><a href="">设置</a></li>
+					<li><a href="">帮助</a></li>
+				</ul>
+			</div>
+			<!-- 右侧TAB内容区 -->
+			<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+				<div class="title-position"><span>所在位置导航</span><hr/></div>
+				<div class="content" id="health_content">
+					<ul class="nav nav-tabs" role="tablist" id="tab-list">
+						<li class="active"><a href="#tab-line" role="tab" data-toggle="tab">血压折线图</a></li>
+						<li><a href="#tab-histogram"  role="tab" data-toggle="tab">血压柱状图</a></li>
+						<li><a href="#tab-analysis"  role="tab" data-toggle="tab">血压分析</a></li>
+						<li><a href="#tab-forecast" role="tab" data-toggle="tab">血压预测</a></li>
+					</ul>
+
+					<div class="tab-content">
+						<div class="tab-pane active" id="tab-line">
+		 					<div class="row feature">
+								<div class="col-sl-7">
+									<h1>1</h1>
+								</div>
+		 					</div>
+						</div>
+						<div class="tab-pane" id="tab-histogram">
+							<div class="row feature">
+								<div class="col-sl-7">
+									<h1>2</h1>
+								</div>
+			 				</div>
+						</div>
+						<div class="tab-pane" id="tab-analysis">
+							<div class="row feature">
+								<div class="col-sl-7">
+									<h1>3</h1>
+								</div>
+				  			</div>
+						</div>
+						<div class="tab-pane" id="tab-forecast">
+							<div class="row feature">
+								<div class="col-sl-7">
+									<h1>4</h1>
+								</div>
+						  	</div>
+						</div>
+					</div>
+					<hr class="divider">
+				</div>
+			</div>
+	</div>
+
+	<div class="modal fade" id="about">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+			<p>关于本公司</p>
+			<!-- 弹出框的头部 -->
+				<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span>
+				<span class="sr-only">Close</span></button>
+			</div>
+			<div class="modal-body">
+				<p>专注身体健康三十年</p>
+			</div>
+			<div class="modal-footer">
+				<button class="btn btn-default" data-dismiss="modal">OK</button>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+<script src="lib/jquery.min.js"></script>
+<script src="lib/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#client_operate .dropdown-menu a").click(function(){
+			var href=$(this).attr("href");
+			$("#operate-bar a[href='"+href+"']").click();
+		});
+		$("#operate-bar #detection a").click(function(){
+			var href=$(this).attr("href");
+			$("#tab-list a[href='"+href+"']").tab("show");
+			return false;
+		});
+
+		$("#detection a").each(function(){
+			$(this).click(function(){
+				$("#detection li").removeClass("current");
+				$(this).parent("li").addClass("current");
+			});
+		});
+	});
+</script>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		#aa{
+			background: #f2f;
+			width: 100px;
+			height: 100px;
+		}
+	</style>
+	<link rel="stylesheet" type="text/css" href="./src/css/xxx.css">
+</head>
+<body>
+	<div id="aa">fsf</div>
+	<div id="bb">fsfsf</div>
+	<div>sfsfs</div>
+	<button>hahaha</button>
+</body>
+<script src="./src/lib/jquery.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$("#aa").css("background","green");
+		$("button").click(function(){
+			// $("#aa").load("./test.txt")
+			$.ajax({
+				url:"http://www.baidu.com",
+				method:'POST',
+				data:{
+					"hh":$("bb").val()
+				},
+				success:function(data){
+					alert(data)
+				},
+				error:function(){
+					alert("搞笑的");
+				}
+			})
+		})
+	})
+</script>
+</html>

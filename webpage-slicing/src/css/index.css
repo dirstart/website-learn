@@ -52,3 +52,44 @@
   height: 55px;
   background: url("../image/footer-logo.png");
 }
+.index-banner {
+  position: relative;
+  background: #b3b3b3;
+}
+.index-banner .index-banner-bg {
+  height: 570px;
+  overflow: hidden;
+}
+.index-banner .index-banner-bg img {
+  margin: 0 auto;
+}
+.index-banner .index-banner-text {
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  margin-left: -388px;
+}
+.index-banner .index-banner-text .text-logo {
+  width: 776px;
+  height: 117px;
+  background: url("../image/text-logo.png") no-repeat;
+}
+.index-banner .index-banner-text .text-info {
+  margin-top: 17px;
+  text-align: center;
+  color: #fff;
+}
+.index-banner .index-banner-text .text-info .line-left {
+  display: inline-block;
+  width: 40px;
+  border-top: 1px solid #fff;
+  margin-right: 26px;
+  vertical-align: middle;
+}
+.index-banner .index-banner-text .text-info .line-right {
+  display: inline-block;
+  width: 40px;
+  border-top: 1px solid #fff;
+  margin-left: 26px;
+  vertical-align: middle;
+}

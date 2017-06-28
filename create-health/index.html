@@ -244,6 +244,16 @@
 			$("#tab-list a[href='"+href+"']").tab("show");
 			return false;
 		});
+		$("#tab-list a").each(function(){
+			$(this).click(function(){
+				var href=$(this).attr("href");
+				$("#detection li").removeClass("current");
+				$("#detection li a[href='"+href+"' ").parent("li").addClass("current");
+				console.log(href);
+				console.log("a");
+
+			});
+		});
 
 		$("#detection a").each(function(){
 			$(this).click(function(){

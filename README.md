@@ -10,4 +10,6 @@
 ![](https://raw.githubusercontent.com/dirstart/image_bed/master/website4.jpg)
 * fifth --一次使用gulp，stylus，ps技术的切图
 ![](https://raw.githubusercontent.com/dirstart/image_bed/master/website5-low.jpg)
+* sixth --使用了node.js,express,mongoose仿b站的动漫视频网站
+![](https://raw.githubusercontent.com/dirstart/image_bed/master/website6.png)
 

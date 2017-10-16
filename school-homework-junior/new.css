@@ -1,0 +1,89 @@
+
+	/*new*/
+	.new{
+		width: 100%;
+		height: 530px;
+		background: #fff;
+	}
+	.new header{
+		width: 385px;
+		height: 95px;
+		background: #f7f7f7;
+		border-radius: 48px;
+		margin: 70px auto 0;
+		box-sizing: border-box;
+		padding: 2px 0 0 35px;
+		/*关于box-sizing 为什么少了后两句图片显示是正确的，内边框模式百度*/
+	}
+	.new p{
+		margin-top: 10px;
+		text-align: center;
+		color: #db0067;
+		/*color: blue;*/
+	}
+	.new ul{
+		margin: 70px auto 0;
+		width: 960px;
+	}
+	.new ul li{
+		overflow: hidden;
+		width: 266px;
+		height: 250px;
+		border: 1px solid #ccc;
+		background: url(images/pic1.jpg) 0 0 no-repeat;
+		float: left;
+		margin-right: 8%;
+		margin-bottom: 40px;
+		position: relative;
+	}
+	.new ul li:nth-child(2){
+		background-image: url(images/pic2.jpg);
+	}
+	.new ul li:nth-child(3){
+		margin-right: 0;
+		background-image: url(images/pic3.jpg);
+	}
+	.new ul li hgroup{
+		position: absolute;
+		left: 0;
+		top: -250px;
+		width: 266px;
+		height: 250px;
+		background: rgba(0,0,0,0.5);
+		transition: all 0.5s ease-in 0s;
+	}
+	.new ul li:hover hgroup{
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+	/*success above all*/
+	.new ul li hgroup h2:nth-child(1){
+		font-size: 22px;
+		text-align: center;
+		color: #fff;
+		font-weight: normal;
+		margin-top: 58px;
+	}
+	.new ul li hgroup h2:nth-child(2){
+		font-size: 14px;
+		text-align: center;
+		color: #fff;
+		font-weight: normal;
+		margin-top: 15px;
+	}
+	.new ul li hgroup h2:nth-child(3){
+		width: 26px;
+		height: 26px;
+		margin-left: 120px;
+		margin-top: 15px;
+		background: url(images/jiantou.png)0 0 no-repeat;
+	}
+
+	.new ul li hgroup h2:nth-child(4){
+		width: 75px;
+		height: 22px;
+		margin-left: 95px;
+		margin-top: 25px;
+		background: url(images/anniu.png)0 0 no-repeat;
+	}
